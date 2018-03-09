@@ -58,7 +58,7 @@ cd $params_path && \
 # log "connection" $connection
 command=$(smb_put \
 	$resource_uri \
-	$resource_path \
+	$params_path \
 	$in_archive \
 	$resource_user \
 	$resource_password
