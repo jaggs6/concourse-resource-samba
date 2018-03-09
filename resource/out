@@ -41,7 +41,7 @@ params_path=$src/$(jq -r '.params.path // "."' < $request)
 log "concourse.source" $src
 log "resource.uri" $resource_uri
 log "resource.user" $resource_user
-log "resource.pasword" [[ -n "${resource_password}" ]] && '<hidden>' || ''
+log "resource.password" [[ -n "${resource_password}" ]] && '<hidden>' || ''
 log "params.path" $params_path
 
 ###
