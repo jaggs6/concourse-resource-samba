@@ -56,7 +56,7 @@ cd $params_path && \
 # Put the resources
 # - build network command
 # log "connection" $connection
-command=$(smb_put \
+command=$(smbclient put \
 	$resource_uri \
 	$params_path \
 	$in_archive \
