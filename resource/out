@@ -55,7 +55,7 @@ cd $params_path && \
 ###
 # Put the resources
 # - build network command
-log "connection" $connection
+# log "connection" $connection
 command=$(smb_put \
 	$resource_uri \
 	$resource_path \
